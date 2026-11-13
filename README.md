@@ -17,8 +17,6 @@
 ### 1. Global Multicultural Friends Ensemble
 Sculpted Pixar-grade 3D characters featuring procedural physical materials, distinct facial anatomy profiles (`jawScale`, `chinY`, `noseStyle`, `eyeTilt`, `mouthStyle`), non-flat depth, and grounded contact physics.
 
-![Global Multicultural Friends Ensemble](web/public/previews/global-friends-cast.jpg)
-
 ### 2. Minimalist Editorial Atelier Header & 14-Day Episode Strip
 Minimalist navigation driven by **Inter** (headings & structural HUD telemetry) and **Work Sans** (narrative story subtitles), with hairline progress indicators and episode filters.
 
