@@ -1,0 +1,203 @@
+{
+  "id": "series-06-lanterns-of-peace",
+  "title": {
+    "en": "Lanterns of Peace Across the Ocean",
+    "id": "Lentera Damai Seberang Samudra"
+  },
+  "tagline": {
+    "en": "When evening mist rolls into the harbor, four little friends light the way home.",
+    "id": "Saat kabut senja menyelimuti dermaga, empat sahabat menyalakan lentera penuntun arah."
+  },
+  "seriesDocsUrl": "docs/series/SERIES_06_LANTERNS_OF_PEACE_DOCS.md",
+  "targetAge": "3-5",
+  "toleranceThemes": [
+    "interfaith-harmony",
+    "cultural-empathy",
+    "universal-kindness"
+  ],
+  "characters": [
+    {
+      "id": "hana",
+      "name": "Hana Lestari",
+      "ethnicBackground": "Indonesian Coastal / Southeast Asian",
+      "faithTradition": "Islam",
+      "attire": {
+        "headwear": "pastel-peach cotton hijab",
+        "clothing": "teal waterproof rain jacket, yellow gumboots",
+        "styleCategory": "modern-modest-casual"
+      },
+      "modelGlbUrl": "models/characters/hana_harbor.glb",
+      "avatarIconUrl": "images/avatars/hana.webp"
+    },
+    {
+      "id": "arlo",
+      "name": "Arlo Lindgren",
+      "ethnicBackground": "Swedish / Scandinavian",
+      "faithTradition": "Christianity",
+      "attire": {
+        "headwear": "none",
+        "clothing": "chunky cable-knit cream wool sweater, navy trousers, warm boots",
+        "styleCategory": "modern-casual"
+      },
+      "modelGlbUrl": "models/characters/arlo_harbor.glb",
+      "avatarIconUrl": "images/avatars/arlo.webp"
+    },
+    {
+      "id": "ananya",
+      "name": "Ananya Patel",
+      "ethnicBackground": "Indian / South Asian",
+      "faithTradition": "Hinduism",
+      "attire": {
+        "headwear": "none",
+        "clothing": "saffron tunic with floral hem, soft sandals",
+        "styleCategory": "traditional-cultural"
+      },
+      "modelGlbUrl": "models/characters/ananya_harbor.glb",
+      "avatarIconUrl": "images/avatars/ananya.webp"
+    },
+    {
+      "id": "karim",
+      "name": "Karim Mansour",
+      "ethnicBackground": "Turkish / Mediterranean",
+      "faithTradition": "Islam",
+      "attire": {
+        "headwear": "cozy wool beanie",
+        "clothing": "striped sailor sweater, denim overalls, warm mittens",
+        "styleCategory": "modern-casual"
+      },
+      "modelGlbUrl": "models/characters/karim_harbor.glb",
+      "avatarIconUrl": "images/avatars/karim.webp"
+    }
+  ],
+  "stories": [
+    {
+      "id": "story-06-01-evening-mist",
+      "seriesId": "series-06-lanterns-of-peace",
+      "episodeNumber": 1,
+      "title": {
+        "en": "When the Evening Mist Rolled In",
+        "id": "Saat Kabut Senja Tiba"
+      },
+      "subtitle": {
+        "en": "Gentle waves and warm twilight across Blue Gull Bay.",
+        "id": "Deburan ombak lembut dan senja hangat di Teluk Camar Biru."
+      },
+      "author": "EduKidz Bedtime Studio",
+      "coverImage": "images/covers/story_06_01.webp",
+      "ageRange": "3-5",
+      "tags": ["bedtime", "lullaby", "harbor", "kindness"],
+      "supportedModes": ["study", "sleeping", "playing"],
+      "defaultMode": "sleeping",
+      "scenes": [
+        {
+          "id": "scene-1",
+          "chapterNumber": 1,
+          "title": {
+            "en": "The Golden Dusk Over Blue Gull Bay",
+            "id": "Senja Keemasan di Teluk Camar Biru"
+          },
+          "modelGlbUrl": "models/scenes/blue_gull_harbor.glb",
+          "cameraInitPosition": [0, 2, 8],
+          "cameraTargetPosition": [0, 1, 0],
+          "cameraLimits": {
+            "minPolarAngle": 0.8,
+            "maxPolarAngle": 1.45,
+            "minDistance": 5,
+            "maxDistance": 10
+          },
+          "interactables": [
+            {
+              "meshTargetName": "HarborWater",
+              "onPointerDown": "spawnParticles",
+              "sfxUrl": "audio/sfx/gentle_water_splash.mp3"
+            },
+            {
+              "meshTargetName": "PierBrassBell",
+              "onPointerDown": "playSound",
+              "sfxUrl": "audio/sfx/soft_pier_chime.mp3"
+            }
+          ],
+          "hotspots": [
+            {
+              "id": "hotspot-lantern",
+              "meshTargetName": "DamarKurungLantern",
+              "title": {
+                "en": "Hana's Paper Lantern",
+                "id": "Lentera Kertas Hana"
+              },
+              "explanation": {
+                "en": "Hana's lantern is made of delicate painted paper called Damar Kurung, glowing with the warm light of peace and care.",
+                "id": "Lentera Hana terbuat dari kertas lukis tradisional Damar Kurung yang bersinar lembut membawa kedamaian dan rasa aman."
+              },
+              "audioPronunciation": {
+                "en": "audio/vocab/en/lantern.mp3",
+                "id": "audio/vocab/id/lentera.mp3"
+              },
+              "icon": "flame"
+            }
+          ],
+          "illustration2dUrl": "images/scenes/harbor_dusk_2d.webp",
+          "layers2d": [
+            { "layerUrl": "images/scenes/harbor_sky_bg.webp", "depthFactor": 0.15 },
+            { "layerUrl": "images/scenes/harbor_pier_mid.webp", "depthFactor": 0.45 },
+            { "layerUrl": "images/scenes/harbor_water_fg.webp", "depthFactor": 0.9 }
+          ],
+          "ambientAudioUrl": "audio/ambience/harbor_waves_crickets.mp3",
+          "dialogue": {
+            "en": {
+              "narrationAudioUrl": "audio/narration/en/story_06_01_scene_1.mp3",
+              "text": "The evening sun turned the gentle ocean waves into liquid gold, and Hana adjusted her peach-colored cotton hijab as cool sea mist rolled in.",
+              "audioStartMs": 0,
+              "audioEndMs": 8500,
+              "words": [
+                { "word": "The", "startMs": 0, "endMs": 250 },
+                { "word": "evening", "startMs": 260, "endMs": 800 },
+                { "word": "sun", "startMs": 810, "endMs": 1200 },
+                { "word": "turned", "startMs": 1210, "endMs": 1650 },
+                { "word": "the", "startMs": 1660, "endMs": 1850 },
+                { "word": "gentle", "startMs": 1860, "endMs": 2300, "isVocab": true, "definition": "Soft, calm, and soothing." },
+                { "word": "ocean", "startMs": 2310, "endMs": 2750 },
+                { "word": "waves", "startMs": 2760, "endMs": 3200 },
+                { "word": "into", "startMs": 3210, "endMs": 3500 },
+                { "word": "liquid", "startMs": 3510, "endMs": 3950 },
+                { "word": "gold,", "startMs": 3960, "endMs": 4500 },
+                { "word": "and", "startMs": 4510, "endMs": 4700 },
+                { "word": "Hana", "startMs": 4710, "endMs": 5150 },
+                { "word": "adjusted", "startMs": 5160, "endMs": 5700 },
+                { "word": "her", "startMs": 5710, "endMs": 5900 },
+                { "word": "peach-colored", "startMs": 5910, "endMs": 6650 },
+                { "word": "cotton", "startMs": 6660, "endMs": 7100 },
+                { "word": "hijab.", "startMs": 7110, "endMs": 8500, "isVocab": true, "definition": "A cozy, comfortable headscarf worn by Muslim girls." }
+              ]
+            },
+            "id": {
+              "narrationAudioUrl": "audio/narration/id/story_06_01_scene_1.mp3",
+              "text": "Matahari senja menyepuh ombak lautan menjadi keemasan, dan Hana merapikan jilbab katun persiknya saat kabut sejuk mulai menyapa dermaga.",
+              "audioStartMs": 0,
+              "audioEndMs": 8200,
+              "words": [
+                { "word": "Matahari", "startMs": 0, "endMs": 600 },
+                { "word": "senja", "startMs": 610, "endMs": 1100 },
+                { "word": "menyepuh", "startMs": 1110, "endMs": 1700 },
+                { "word": "ombak", "startMs": 1710, "endMs": 2150 },
+                { "word": "lautan", "startMs": 2160, "endMs": 2650 },
+                { "word": "menjadi", "startMs": 2660, "endMs": 3150 },
+                { "word": "keemasan,", "startMs": 3160, "endMs": 3900 },
+                { "word": "dan", "startMs": 3910, "endMs": 4150 },
+                { "word": "Hana", "startMs": 4160, "endMs": 4600 },
+                { "word": "merapikan", "startMs": 4610, "endMs": 5250 },
+                { "word": "jilbab", "startMs": 5260, "endMs": 5750, "isVocab": true, "definition": "Kain penutup kepala yang santun dan sejuk bagi perempuan Muslimah." },
+                { "word": "katun", "startMs": 5760, "endMs": 6200 },
+                { "word": "persiknya", "startMs": 6210, "endMs": 6800 },
+                { "word": "saat", "startMs": 6810, "endMs": 7050 },
+                { "word": "kabut", "startMs": 7060, "endMs": 7450 },
+                { "word": "sejuk", "startMs": 7460, "endMs": 7800 },
+                { "word": "menyapa.", "startMs": 7810, "endMs": 8200 }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

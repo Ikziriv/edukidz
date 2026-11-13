@@ -1,0 +1,258 @@
+{
+  "id": "series-01-friendship-garden",
+  "title": {
+    "en": "The Global Friendship Garden",
+    "id": "Petualangan Taman Sahabat Dunia"
+  },
+  "tagline": {
+    "en": "Different seeds, diverse friends, one blooming community garden.",
+    "id": "Aneka benih, ragam sahabat, satu kebun yang mekar bersama."
+  },
+  "seriesDocsUrl": "docs/series/SERIES_01_FRIENDSHIP_GARDEN_DOCS.md",
+  "targetAge": "6-8",
+  "toleranceThemes": [
+    "interfaith-harmony",
+    "cultural-empathy",
+    "gotong-royong",
+    "universal-kindness"
+  ],
+  "characters": [
+    {
+      "id": "aisyah",
+      "name": "Aisyah Rahma",
+      "ethnicBackground": "Indonesian / Southeast Asian",
+      "faithTradition": "Islam",
+      "attire": {
+        "headwear": "pastel-mint sport hijab",
+        "clothing": "casual denim jacket, cream tee, beige joggers",
+        "styleCategory": "modern-modest-casual"
+      },
+      "modelGlbUrl": "models/characters/aisyah_garden.glb",
+      "avatarIconUrl": "images/avatars/aisyah.webp"
+    },
+    {
+      "id": "mateo",
+      "name": "Mateo Silva",
+      "ethnicBackground": "Brazilian / Latin American",
+      "faithTradition": "Christianity (Catholic)",
+      "attire": {
+        "headwear": "none",
+        "clothing": "ochre zip-hoodie, rolled denim jeans, red canvas sneakers",
+        "styleCategory": "modern-casual"
+      },
+      "modelGlbUrl": "models/characters/mateo_garden.glb",
+      "avatarIconUrl": "images/avatars/mateo.webp"
+    },
+    {
+      "id": "kenji",
+      "name": "Kenji Takahashi",
+      "ethnicBackground": "Japanese / East Asian",
+      "faithTradition": "Shinto & Buddhist Heritage",
+      "attire": {
+        "headwear": "none",
+        "clothing": "navy-and-white striped tee, olive cargo shorts, tortoiseshell spectacles",
+        "styleCategory": "modern-casual"
+      },
+      "modelGlbUrl": "models/characters/kenji_garden.glb",
+      "avatarIconUrl": "images/avatars/kenji.webp"
+    },
+    {
+      "id": "amara",
+      "name": "Amara Okafor",
+      "ethnicBackground": "Nigerian / West African",
+      "faithTradition": "Interfaith Family",
+      "attire": {
+        "headwear": "wooden hair beads in braids",
+        "clothing": "sunflower-yellow tunic with geometric Ankara trim, turquoise leggings",
+        "styleCategory": "traditional-cultural"
+      },
+      "modelGlbUrl": "models/characters/amara_garden.glb",
+      "avatarIconUrl": "images/avatars/amara.webp"
+    }
+  ],
+  "stories": [
+    {
+      "id": "story-01-01-first-seedling",
+      "seriesId": "series-01-friendship-garden",
+      "episodeNumber": 1,
+      "title": {
+        "en": "The First Seedling",
+        "id": "Bibit Pertama"
+      },
+      "subtitle": {
+        "en": "Turning an abandoned lot into a home for seeds and friends.",
+        "id": "Mengubah tanah kosong menjadi rumah bagi benih dan persahabatan."
+      },
+      "author": "EduKidz Creative Team",
+      "coverImage": "images/covers/story_01_01.webp",
+      "ageRange": "6-8",
+      "tags": ["nature", "friendship", "seeds", "sharing-food"],
+      "supportedModes": ["study", "sleeping", "playing"],
+      "defaultMode": "study",
+      "scenes": [
+        {
+          "id": "scene-1",
+          "chapterNumber": 1,
+          "title": {
+            "en": "The Empty Lot and Aisyah's Dream",
+            "id": "Lahan Kosong dan Impian Aisyah"
+          },
+          "modelGlbUrl": "models/scenes/empty_lot_garden.glb",
+          "cameraInitPosition": [0, 3, 7],
+          "cameraTargetPosition": [0, 1, 0],
+          "cameraLimits": {
+            "minPolarAngle": 0.5,
+            "maxPolarAngle": 1.4,
+            "minDistance": 4,
+            "maxDistance": 12
+          },
+          "interactables": [
+            {
+              "meshTargetName": "AisyahMesh",
+              "onPointerDown": "triggerAnimation",
+              "animationClipName": "KneelAndSmile",
+              "sfxUrl": "audio/sfx/trowel_dig.mp3"
+            },
+            {
+              "meshTargetName": "MateoGuitarMesh",
+              "onPointerDown": "playSound",
+              "sfxUrl": "audio/sfx/guitar_chord_warm.mp3"
+            }
+          ],
+          "hotspots": [
+            {
+              "id": "hotspot-hijab",
+              "meshTargetName": "AisyahMesh",
+              "title": {
+                "en": "Aisyah's Sport Hijab",
+                "id": "Jilbab Olahraga Aisyah"
+              },
+              "explanation": {
+                "en": "Aisyah wears a breathable pastel-mint sport hijab. It stays snug and comfortable while she digs, plants, and plays active outdoor sports with her friends!",
+                "id": "Aisyah mengenakan jilbab olahraga berwarna hijau mint yang sejuk dan nyaman dipakai bergerak aktif saat berkebun dan bermain bersama sahabat-sahabatnya."
+              },
+              "audioPronunciation": {
+                "en": "audio/vocab/en/hijab.mp3",
+                "id": "audio/vocab/id/hijab.mp3"
+              },
+              "icon": "sparkles"
+            },
+            {
+              "id": "hotspot-soil",
+              "meshTargetName": "RaisedBedSoil",
+              "title": {
+                "en": "Rich Garden Soil",
+                "id": "Tanah Subur"
+              },
+              "explanation": {
+                "en": "Healthy soil is full of tiny friendly microbes, earthworms, and rich nutrients that help sleeping seeds wake up and sprout strong roots.",
+                "id": "Tanah yang sehat penuh dengan cacing tanah dan nutrisi alami yang membantu benih bertunas dengan akar yang kokoh."
+              },
+              "audioPronunciation": {
+                "en": "audio/vocab/en/soil.mp3",
+                "id": "audio/vocab/id/tanah.mp3"
+              },
+              "icon": "sprout"
+            }
+          ],
+          "illustration2dUrl": "images/scenes/empty_lot_2d.webp",
+          "layers2d": [
+            { "layerUrl": "images/scenes/empty_lot_bg.webp", "depthFactor": 0.2 },
+            { "layerUrl": "images/scenes/empty_lot_mid.webp", "depthFactor": 0.5 },
+            { "layerUrl": "images/scenes/empty_lot_fg.webp", "depthFactor": 1.0 }
+          ],
+          "ambientAudioUrl": "audio/ambience/city_garden_breeze.mp3",
+          "dialogue": {
+            "en": {
+              "narrationAudioUrl": "audio/narration/en/story_01_01_scene_1.mp3",
+              "text": "Aisyah adjusted her mint-green sport hijab, knelt by the soil, and showed Mateo her grandmother's heirloom ginger seeds.",
+              "audioStartMs": 0,
+              "audioEndMs": 7500,
+              "words": [
+                { "word": "Aisyah", "startMs": 0, "endMs": 600 },
+                { "word": "adjusted", "startMs": 610, "endMs": 1150 },
+                { "word": "her", "startMs": 1160, "endMs": 1350 },
+                { "word": "mint-green", "startMs": 1360, "endMs": 2100 },
+                { "word": "sport", "startMs": 2110, "endMs": 2550 },
+                { "word": "hijab,", "startMs": 2560, "endMs": 3100, "isVocab": true, "definition": "A comfortable, modest headscarf worn by Muslim girls and women." },
+                { "word": "knelt", "startMs": 3110, "endMs": 3600 },
+                { "word": "by", "startMs": 3610, "endMs": 3800 },
+                { "word": "the", "startMs": 3810, "endMs": 3950 },
+                { "word": "soil,", "startMs": 3960, "endMs": 4400, "isVocab": true, "definition": "The top layer of earth in which plants grow." },
+                { "word": "and", "startMs": 4410, "endMs": 4600 },
+                { "word": "showed", "startMs": 4610, "endMs": 5000 },
+                { "word": "Mateo", "startMs": 5010, "endMs": 5500 },
+                { "word": "her", "startMs": 5510, "endMs": 5700 },
+                { "word": "grandmother's", "startMs": 5710, "endMs": 6500 },
+                { "word": "heirloom", "startMs": 6510, "endMs": 6950, "isVocab": true, "definition": "A valuable seed or tradition passed down through generations of a family." },
+                { "word": "ginger", "startMs": 6960, "endMs": 7250 },
+                { "word": "seeds.", "startMs": 7260, "endMs": 7500 }
+              ]
+            },
+            "id": {
+              "narrationAudioUrl": "audio/narration/id/story_01_01_scene_1.mp3",
+              "text": "Aisyah merapikan jilbab olahraga hijaunya yang sejuk, berlutut dekat tanah gembur, lalu memperlihatkan benih jahe warisan neneknya kepada Mateo.",
+              "audioStartMs": 0,
+              "audioEndMs": 7200,
+              "words": [
+                { "word": "Aisyah", "startMs": 0, "endMs": 620 },
+                { "word": "merapikan", "startMs": 630, "endMs": 1280 },
+                { "word": "jilbab", "startMs": 1290, "endMs": 1800, "isVocab": true, "definition": "Kain penutup kepala yang santun dan anggun bagi perempuan Muslimah." },
+                { "word": "olahraga", "startMs": 1810, "endMs": 2350 },
+                { "word": "hijaunya", "startMs": 2360, "endMs": 2850 },
+                { "word": "yang", "startMs": 2860, "endMs": 3050 },
+                { "word": "sejuk,", "startMs": 3060, "endMs": 3500 },
+                { "word": "berlutut", "startMs": 3510, "endMs": 4050 },
+                { "word": "dekat", "startMs": 4060, "endMs": 4350 },
+                { "word": "tanah", "startMs": 4360, "endMs": 4750, "isVocab": true, "definition": "Lapisan bumi tempat akar tanaman bertumbuh subur." },
+                { "word": "gembur,", "startMs": 4760, "endMs": 5200 },
+                { "word": "lalu", "startMs": 5210, "endMs": 5450 },
+                { "word": "memperlihatkan", "startMs": 5460, "endMs": 6200 },
+                { "word": "benih", "startMs": 6210, "endMs": 6550, "isVocab": true, "definition": "Biji tanaman yang siap disemai untuk menghasilkan tunas baru." },
+                { "word": "jahe", "startMs": 6560, "endMs": 6800 },
+                { "word": "warisan", "startMs": 6810, "endMs": 7050 },
+                { "word": "neneknya.", "startMs": 7060, "endMs": 7200 }
+              ]
+            }
+          },
+          "quiz": [
+            {
+              "id": "quiz-01",
+              "question": {
+                "en": "What did Aisyah bring to plant in the community garden?",
+                "id": "Apa yang dibawa Aisyah untuk ditanam di kebun bersama?"
+              },
+              "options": [
+                {
+                  "text": {
+                    "en": "Heirloom ginger seeds from her grandmother",
+                    "id": "Benih jahe warisan dari neneknya"
+                  },
+                  "isCorrect": true
+                },
+                {
+                  "text": {
+                    "en": "Plastic toy flowers",
+                    "id": "Bunga plastik mainan"
+                  },
+                  "isCorrect": false
+                },
+                {
+                  "text": {
+                    "en": "Dry leaves from the street",
+                    "id": "Daun kering dari jalanan"
+                  },
+                  "isCorrect": false
+                }
+              ],
+              "explanation": {
+                "en": "Correct! Aisyah brought real heirloom ginger seeds passed down by her grandmother.",
+                "id": "Tepat sekali! Aisyah membawa benih jahe asli warisan neneknya yang penuh khasiat."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Agent search ignore file (ripgrep / grep exclusion)
+tests/
+__tests__/
+*.test.ts
+*.test.tsx
+*.test.js
+*.spec.ts
+*.spec.tsx
+*.spec.js
